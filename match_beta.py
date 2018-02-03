@@ -45,14 +45,6 @@ def format_fow(soup,i):
 		fwtm.append(fw)	
 	return fwtm
 
-
-# def dnb(soup,i):
-# 	try:
-# 		dnb = soup.find('div',{'id':'gp-inning-0'+i}).find_all('div',{'class':'dnb'})[1].text
-# 	except:
-# 		dnb = 'All out'
-# 	return dnb
-
 def format_bat_stat(soup,i):
 	bat_db = []
 	bat_list = batsmen = soup.find('div',{'id':'gp-inning-0'+i}).find_all('div',{'class':'wrap batsmen'})
